@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.floatingHeader {
+    height: 3em; 
+    width: 100%;
+    background-color: grey;
+    position: fixed;
+    display: flex;
+    z-index: 1;
+}
+
+.landing {
+    height: 60em;
+    width: 100%;
+    background-color: purple;
+    position: relative;
+    display: flex;
+}
+
+.press {
+    height: 30em;
+    width: 100%;
+    background-color: white;
+}
+
+.whatIsKast {
+    height: 30em;
+    width: 100%;
+    background-color: turquoise;
+}   
