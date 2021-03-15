@@ -8,40 +8,82 @@
     <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 <body>
+    <div class = "backgroundImage"></div>
     <div class = "floatingHeader">
-        <a href="https://google.com">
-            <img class = "kastLogo" />
-        </a>
-        <a href="https://google.com">
-            <h3 class = "headerFont dropDown" id = "about">About</h3>
-        </a>
-        <a href="https://google.com">
-            <h3 class = "headerFont dropDown" id = "help">Help</h3>
-        </a>
-        <a href="https://google.com">
-            <h3 class = "headerFont dropDown" id = "community">Community</h3>
-        </a>
-        <a href="https://google.com">
-            <h3 class = "headerFont" id = "premium">Premium</h3>
-        </a>
-        <a href="https://google.com">
-            <h3 class = "openKast">OPEN KAST</h3>
-        </a>
+        <div class = "floatingHeaderLeft">
+            <a href="https://google.com">
+                <img class = "kastLogo" src = "assets/kast-logo-horizontal-color-white.svg" />
+            </a>
+        </div>
+        <div class = "floatingHeaderRight">
+            <nav class = "dropdown">
+                <div class = "about">
+                    <button class = "headerFont">About</button>
+                    <ul class = "headerFont">
+                        <li><a href="https://google.com">What is Kast?</a></li>
+                        <li><a href="https://google.com">Kast TV</a></li>
+                        <li><a href="https://google.com">Blog</a></li>
+                        <li><a href="https://google.com">Press Release</a></li>
+                    </ul>
+                </div>
+                <div class = "help">
+                    <button class = "headerFont">Help</button>
+                    <ul class = "headerFont">
+                        <li><a href="https://google.com">Contact Support</a></li>
+                        <li><a href="https://google.com">FAQ's</a></li>
+                        <li><a href="https://google.com">Get Kast</a></li>
+                    </ul>
+                </div>
+                <div class = "community">
+                    <button class = "headerFont">Community</button>
+                    <ul class = "headerFont">
+                        <li><a href="https://google.com">Community Guidelines</a></li>
+                        <li><a href="https://google.com">Founders Hall of Fame</a></li>
+                    </ul>
+                </div>
+                <button class = "headerFont"><a href = "#" class = "premium">Premium</a></button>
+                <button class = "openKastFont"><a href = "#" class = "openKast">OPEN KAST</a></button>
+            </nav>
+        </div>
     </div>
 
     <div class = "landing">
-        <img class = "laptop" />
-        <h1 class = "watchParties">Watch parties made easy.</h1>
-        <h3 class = "watchParitesCopy">Watch <b>whatever you want</b> with friends online: movies, TV shows, you name it. Share your screen and camera or launch content directly from Kast TV in your watch parties. Join millions of kasters today!</h3>
-        <h3 class = "openKastYellow">OPEN KAST</h3>
+        <img id = "laptop" src="assets/laptop-large-p-800.png" />
+        <h1 id = "watchPartiesMadeEasy">Watch parties made easy.</h1>
+        <p id = "watchPartiesCopy">Watch <b>whatever you want</b> with friends online: movies, TV shows, you name it. Share your screen and camera or launch content directly from Kast TV in your watch parties. Join millions of kasters today!</p>
+        <a class = "font" id = "openKastYellow" href = "https://google.com"><b>OPEN KAST</b></a>
     </div>
 
     <div class = "press">
-        
+        <h2 id = "featuredIn">Featured in</h1>
+        <div id = "imageBoard">
+            <div id = "leftRow">
+                <img src = "assets/wired-logo.svg">
+                <img src = "assets/evening-standard-logo.svg">
+            </div>
+            <div id = "middleRow">
+                <img src = "assets/nerdist-logo.svg">
+                <img src = "assets/bbc-logo.svg">
+            </div>
+            <div id = "rightRow">
+                <img src = "assets/yahoo-finance-logo.svg">
+                <img src = "assets/daily-mail-logo.svg">
+            </div>
+        </div>
+        <p class = "font" id = "quote"><i>"Kast has probably never been more relevant - or necessary - than it is now."</i></p>
     </div>
 
     <div class = "whatIsKast">
-        
+        <h1 class = "font" id = "whatIsQuestion"><b>What is Kast?</b></h1>
+        <p class = "font" id = "whatIsCopy">Looking for a place to watch movies, play, and hang out with friends? 
+            <br>
+            Hop onto Kast and start sharing experiences real-time!</p>
+        <p class = "font" id = "whatIsCopy">Up to 20 people can share their screen or camera and another 100 can 
+            <br>
+            watch in a party. And with Kast TV, you can now stream directly from the
+            <br>
+             cloud.</p>
+        <a class = "font" id = "openKastYellow" href = "https://google.com"><b>OPEN KAST</b></h3>
     </div>
 </body>
 </html>

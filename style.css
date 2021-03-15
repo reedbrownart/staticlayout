@@ -1,33 +1,280 @@
 body {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
+
+.font {
+  color: white;
+  font-family: Roboto, sans-serif;
+  font-size: 16pt;
+}
+
+.headerFont {
+  color: white;
+  font-family: Roboto, sans-serif;
+  font-size: 12pt;
+  font-weight: bold;
+}
+
+.openKastFont {
+  color: white;
+  font-family: Roboto, sans-serif;
+  font-size: 10pt;
+  letter-spacing: 2px;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*
+div {
+    border: 1px black solid;
+}
+
+/* FLOATING HEADER CLASSES AND IDS */
 
 .floatingHeader {
-    height: 3em; 
-    width: 100%;
-    background-color: grey;
-    position: fixed;
-    display: flex;
-    z-index: 1;
+  position: fixed;
+  height: 5em;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  align-content: center;
 }
+
+.floatingHeaderLeft {
+  height: 5em;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.floatingHeaderRight {
+  height: 5em;
+  width: 63em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.backgroundImage {
+  position: fixed;
+  height: 5em;
+  width: 100%;
+  background-color: rgb(136, 167, 132);
+  opacity: 0.5;
+}
+
+.kastLogo {
+  height: 4em;
+  width: 12em;
+  padding-left: 15px;
+  padding-top: 5px;
+}
+
+.dropdown {
+  height: 10vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: transparent;
+}
+
+.dropdown button,
+.premium {
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.about,
+.help,
+.community {
+  position: relative;
+}
+
+.about ul,
+.help ul,
+.community ul {
+  background-color: white;
+  position: absolute;
+  left: -20px;
+  margin-top: 10px;
+  padding-left: 25px;
+  width: 120px;
+  height: 120px;
+  display: flex;
+  justify-content: space-around;
+  align-items: left;
+  flex-direction: column;
+  list-style: none;
+  border-radius: 5px;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-10px);
+}
+
+.about a,
+.help a,
+.community a {
+  color: grey;
+  text-decoration: none;
+}
+
+.about button:focus + ul,
+.help button:focus + ul,
+.community button:focus + ul {
+  opacity: 1;
+  pointer-events: all;
+  transform: translateY(0px);
+}
+
+.about li:hover,
+.help li:hover,
+.community li:hover {
+  text-decoration: underline;
+}
+
+.openKast {
+  width: 120px;
+  height: 22px;
+  border: 1px solid white;
+  text-align: center;
+  color: white;
+  padding: 5px;
+  background-color: transparent;
+}
+
+/* LANDING CLASSES AND IDS */
 
 .landing {
-    height: 60em;
-    width: 100%;
-    background-color: purple;
-    position: relative;
-    display: flex;
+  background-image: url("https://www.kastapp.co/images/gradient-violet-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 48em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 165px;
 }
+
+#laptop {
+  height: 351px;
+  width: 600px;
+}
+
+#watchPartiesMadeEasy {
+  font-size: 48px;
+  color: white;
+  font-family: Roboto, sans-serif;
+  font-weight: normal;
+  padding-bottom: 0;
+}
+
+#watchPartiesCopy {
+  font-size: 24px;
+  font-weight: normal;
+  color: white;
+  width: 28em;
+  text-align: center;
+  font-family: Roboto, sans-serif;
+  padding-bottom: 1em;
+}
+
+/* THIS IS USED AGAIN IN THE whatIsKast DIV */
+
+#openKastYellow {
+  width: 200px;
+  border-radius: 3px;
+  background-color: #fe9000;
+  color: #fff;
+  font-size: 18px;
+  line-height: 44px;
+  text-align: center;
+}
+
+/* PRESS CLASSES AND IDS */
 
 .press {
-    height: 30em;
-    width: 100%;
-    background-color: white;
+  height: 40em;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: rgb(87, 83, 83);
+  font-family: Roboto, sans-serif;
 }
 
+#featuredIn {
+  padding-top: 50px;
+  padding-bottom: 0px;
+}
+
+#imageBoard {
+  height: 25em;
+  width: 65em;
+  padding-top: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+#leftRow {
+  display: flex;
+  flex-direction: column;
+  justify-items: space-evenly;
+  justify-content: space-evenly;
+}
+
+#middleRow {
+  display: flex;
+  flex-direction: column;
+  justify-items: space-evenly;
+  justify-content: space-evenly;
+}
+
+#rightRow {
+  display: flex;
+  flex-direction: column;
+  justify-items: space-evenly;
+  justify-content: space-evenly;
+}
+
+#quote {
+  color: rgb(87, 83, 83);
+  font-family: Roboto, sans-serif;
+}
+
+/* WHATISKAST CLASSES AND IDS */
+
 .whatIsKast {
-    height: 30em;
-    width: 100%;
-    background-color: turquoise;
-}   
+  width: 100%;
+  height: 38em;
+  background-image: url("https://www.kastapp.co/images/green-bg.jpg");
+
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+#whatIsQuestion {
+  color: white;
+  font-size: 48px;
+  line-height: 48px;
+  font-weight: 500;
+  text-align: center;
+}
+
+#whatIsCopy {
+  width: 35em;
+  text-align: center;
+}
